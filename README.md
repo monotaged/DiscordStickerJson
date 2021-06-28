@@ -7,12 +7,36 @@
 
 ## 스티커팩 데이터 구조
 ```json
-{"sticker_packs": [{"id": "스티커팩 id", "name": "스티커팩 이름", "sku_id": "아이템 id", "cover_sticker_id": "미리보기 스티커 id", "description": "스티커 설명", "banner_asset_id": "스티커 미리보기 배경 id", "sticker": ["스티커 데이터들..."]}]}
+{
+   "sticker_packs":[
+      {
+         "id":"스티커팩 id",
+         "name":"스티커팩 이름",
+         "sku_id":"아이템 id",
+         "cover_sticker_id":"미리보기 스티커 id",
+         "description":"스티커 설명",
+         "banner_asset_id":"스티커 미리보기 배경 id",
+         "sticker":[
+            "스티커 데이터들..."
+         ]
+      }
+   ]
+}
 ```
 
 ## 스티커 데이터 구조
 ```json
-{"id": "스티커 id", "name": "스티커 이름", "tags": "스티커 태그들", "type": "스티커 타입", "format_type": "스티커 이미지 타입", "description": "스티커 설명", "asset": "", "pack_id": "스티커팩 id", "sort_value": ""}
+{
+   "id":"스티커 id",
+   "name":"스티커 이름",
+   "tags":"스티커 태그들",
+   "type":"스티커 타입",
+   "format_type":"스티커 이미지 타입",
+   "description":"스티커 설명",
+   "asset":"",
+   "pack_id":"스티커팩 id",
+   "sort_value":""
+}
 ``` 
 
 ## 라우터
@@ -22,7 +46,11 @@
 POST ``https://discord.com/api/v9/channels/{유저 id}/greet``
 
 ```json
-{"sticker_ids":["스티커id"]}
+{
+   "sticker_ids":[
+      "스티커id"
+   ]
+}
 ```
 
 **비공개, 공개 스티커팩 정보 가져오기 (봇 사용 불가, 유저 토큰 인증 필요)**
