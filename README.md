@@ -68,6 +68,7 @@ GET ``https://discord.com/stickers/{스티커 id}.json``
 **공개 스티커팩 리스트 가져오기 (인증 불필요)**
 
 GET ``https://discord.com/api/v9/sticker-packs/``
+
 GET ``https://raw.githubusercontent.com/decave27/DiscordStickerJson/main/DiscordStickerJson.json``
 
 - 스타 한번씩 눌러주세요!
