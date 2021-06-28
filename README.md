@@ -5,6 +5,9 @@
 
 정확하지는 않지만 제가 확인한 결과로는 디스코드 스티커는 공개 스티커팩와 비공개 스티커팩으로 나누어집니다.
 
+
+
+
 ## 스티커팩 데이터 구조
 ```json
 {
@@ -65,6 +68,7 @@ GET ``https://discord.com/stickers/{스티커 id}.json``
 **공개 스티커팩 리스트 가져오기 (인증 불필요)**
 
 GET ``https://discord.com/api/v9/sticker-packs/``
+GET ``https://raw.githubusercontent.com/decave27/DiscordStickerJson/main/DiscordStickerJson.json``
 
 - 스타 한번씩 눌러주세요!
 
